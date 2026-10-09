@@ -1,4 +1,4 @@
-﻿# 🔬 Robust Stochastic Optimization under Heavy-Tailed Noise for Network Telemetry
+# 🔬 Robust Stochastic Optimization under Heavy-Tailed Noise for Network Telemetry
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -41,10 +41,10 @@ High-resolution figures generated in `figures/`:
 
 | Figure | Description & Takeaway |
 |:---:|:---|
-| <img src="figures/convergence_heavy_tailed.png" width="450" alt="Convergence Trajectories"> | **Convergence Trajectories under Heavy-Tailed Noise ($\nu = 1.35$)**<br><br>Loss trajectories over 1,200 iterations (15 seeds). Clipped SGD (Adaptive) achieves significantly lower empirical loss with narrow confidence intervals, whereas Standard SGD exhibits extreme variance. |
-| <img src="figures/gradient_norm_bursts.png" width="450" alt="Gradient Norm Bursts"> | **Gradient Norm Explosions & Clipping Threshold**<br><br>Log-scale stochastic gradient norm bursts. Demonstrates raw gradient explosions ($> 10^2$) and shows how the clipping threshold $\tau$ truncates destructive spikes without losing directional signal. |
-| <img src="figures/tail_index_sensitivity.png" width="450" alt="Tail Index Sensitivity"> | **Phase Transition at $\nu = 2.0$**<br><br>For $\nu \ge 2$ (finite variance), Standard SGD and Clipped SGD perform comparably. For $\nu < 2$ (infinite variance), Standard SGD drops to ~62%, while Clipped SGD retains ~80%. |
-| <img src="figures/clipping_threshold_ablation.png" width="450" alt="Clipping Threshold Ablation"> | **Bias-Variance Trade-Off across $\tau$**<br><br>Ablation over clipping thresholds $\tau \in [0.1, 15.0]$. Confirms an optimal operating window around $\tau^* \approx 0.8 - 2.5$ for balanced bias and variance. |
+| <img src="figures/convergence_heavy_tailed.png" width="500" alt="Convergence Trajectories"> | **Convergence Trajectories under Heavy-Tailed Noise ($\nu = 1.35$)**<br><br>Loss trajectories over 1,200 iterations (15 seeds). Clipped SGD (Adaptive) achieves significantly lower empirical loss with narrow confidence intervals, whereas Standard SGD exhibits extreme variance. |
+| <img src="figures/gradient_norm_bursts.png" width="500" alt="Gradient Norm Bursts"> | **Gradient Norm Explosions & Clipping Threshold**<br><br>Log-scale stochastic gradient norm bursts. Demonstrates raw gradient explosions ($> 10^2$) and shows how the clipping threshold $\tau$ truncates destructive spikes without losing directional signal. |
+| <img src="figures/tail_index_sensitivity.png" width="500" alt="Tail Index Sensitivity"> | **Phase Transition at $\nu = 2.0$**<br><br>For $\nu \ge 2$ (finite variance), Standard SGD and Clipped SGD perform comparably. For $\nu < 2$ (infinite variance), Standard SGD drops to ~62%, while Clipped SGD retains ~80%. |
+| <img src="figures/clipping_threshold_ablation.png" width="500" alt="Clipping Threshold Ablation"> | **Bias-Variance Trade-Off across $\tau$**<br><br>Ablation over clipping thresholds $\tau \in [0.1, 15.0]$. Confirms an optimal operating window around $\tau^* \approx 0.8 - 2.5$ for balanced bias and variance. |
 
 ---
 
@@ -99,7 +99,9 @@ Generated PNG plots are saved in `figures/` at 300 DPI.
 
 ## 👤 Author
 
-- **Mossaab Belazri** ([GitHub Profile](https://github.com/mossaabbelazri))
+**Mossaab Belazri**
+
+[![GitHub](https://img.shields.io/badge/GitHub-mossaabbelazri-181717?logo=github)](https://github.com/mossaabbelazri)
 
 ---
 
