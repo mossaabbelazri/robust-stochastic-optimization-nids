@@ -40,11 +40,11 @@ Empirical evaluations across 15 randomized trials on network telemetry classific
 High-resolution figures generated in `figures/`:
 
 | Figure | Description & Takeaway |
-|:---|:---|
-| **`convergence_heavy_tailed.png`** | Loss trajectories over 1,200 iterations (15 seeds). Clipped SGD (Adaptive) achieves significantly lower empirical loss with narrow confidence intervals, whereas Standard SGD exhibits extreme variance. |
-| **`gradient_norm_bursts.png`** | Log-scale stochastic gradient norm bursts. Demonstrates raw gradient explosions ($> 10^2$) and shows how the clipping threshold $\tau$ truncates destructive spikes. |
-| **`tail_index_sensitivity.png`** | Phase transition at $\nu = 2.0$. For $\nu \ge 2$ (finite variance), Standard SGD and Clipped SGD perform comparably. For $\nu < 2$ (infinite variance), Standard SGD drops to ~62%, while Clipped SGD retains ~80%. |
-| **`clipping_threshold_ablation.png`** | Bias-variance trade-off across clipping thresholds $\tau \in [0.1, 15.0]$. Confirms an optimal operating window around $\tau^* \approx 0.8 - 2.5$. |
+|:---:|:---|
+| <img src="figures/convergence_heavy_tailed.png" width="450" alt="Convergence Trajectories"> | **Convergence Trajectories under Heavy-Tailed Noise ($\nu = 1.35$)**<br><br>Loss trajectories over 1,200 iterations (15 seeds). Clipped SGD (Adaptive) achieves significantly lower empirical loss with narrow confidence intervals, whereas Standard SGD exhibits extreme variance. |
+| <img src="figures/gradient_norm_bursts.png" width="450" alt="Gradient Norm Bursts"> | **Gradient Norm Explosions & Clipping Threshold**<br><br>Log-scale stochastic gradient norm bursts. Demonstrates raw gradient explosions ($> 10^2$) and shows how the clipping threshold $\tau$ truncates destructive spikes without losing directional signal. |
+| <img src="figures/tail_index_sensitivity.png" width="450" alt="Tail Index Sensitivity"> | **Phase Transition at $\nu = 2.0$**<br><br>For $\nu \ge 2$ (finite variance), Standard SGD and Clipped SGD perform comparably. For $\nu < 2$ (infinite variance), Standard SGD drops to ~62%, while Clipped SGD retains ~80%. |
+| <img src="figures/clipping_threshold_ablation.png" width="450" alt="Clipping Threshold Ablation"> | **Bias-Variance Trade-Off across $\tau$**<br><br>Ablation over clipping thresholds $\tau \in [0.1, 15.0]$. Confirms an optimal operating window around $\tau^* \approx 0.8 - 2.5$ for balanced bias and variance. |
 
 ---
 
@@ -99,7 +99,7 @@ Generated PNG plots are saved in `figures/` at 300 DPI.
 
 ## 👤 Author
 
-- **Mossaab Belazri** ([GitHub Profile](https://github.com/))
+- **Mossaab Belazri** ([GitHub Profile](https://github.com/mossaabbelazri))
 
 ---
 
